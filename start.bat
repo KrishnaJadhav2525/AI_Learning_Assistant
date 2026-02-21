@@ -1,0 +1,3 @@
+@echo off
+echo Starting AI Learning Assistant Frontend and Backend...
+npm run dev
