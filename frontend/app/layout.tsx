@@ -6,8 +6,27 @@ import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AI Learning Assistant',
-  description: 'Transform YouTube videos and PDFs into interactive flashcards and quizzes',
+  title: {
+    default: 'AI Learning Assistant - Automate Your Studying',
+    template: '%s | AI Learning Assistant'
+  },
+  description: 'Transform YouTube videos and PDFs into interactive flashcards, quizzes, and chat sessions with AI.',
+  keywords: ['AI', 'Learning', 'Education', 'Flashcards', 'Quiz', 'RAG', 'PDF', 'YouTube'],
+  authors: [{ name: 'Krishna' }],
+  creator: 'Krishna',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://ai-learning-assistant.vercel.app',
+    title: 'AI Learning Assistant',
+    description: 'Turn unstructured content into interactive study aids instantly using ChatGPT.',
+    siteName: 'AI Learning Assistant',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Learning Assistant',
+    description: 'Transform YouTube videos and PDFs into interactive study sessions.',
+  },
 };
 
 export default function RootLayout({
